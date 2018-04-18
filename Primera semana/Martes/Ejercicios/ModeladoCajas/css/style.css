@@ -1,0 +1,33 @@
+#padding {
+	color: blue;
+	background-color: yellow;
+	/*Diferentes formas de establecer los valores del padding:
+	padding: 50px;		Aplica 50px para los 40 márgenes
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;*/
+	padding: 50px 70px 80px 15px;
+	margin: 0px 150px 15px 30px;
+}
+
+#border {
+	color: white;
+	background-color: red;
+	/*border: 50px 70px 80px 15px solid black; /*con solid black le estamos dando un color al borde*/
+	border: 50px solid black;
+	margin: 0px 150px 15px 30px;
+}
+
+#margin {
+	color: purple;
+	background-color: orange;
+	margin: 0px 150px 15px 30px;
+}
+
+#imagen {
+	background-color: black;
+	border: 50px solid skyblue;
+	margin: 21px;
+	padding: 30px;
+}

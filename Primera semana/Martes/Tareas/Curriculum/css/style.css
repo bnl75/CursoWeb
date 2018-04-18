@@ -1,0 +1,82 @@
+.activo {
+	background-color: #B1B2B9;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.logo {
+	width: 20%;
+	margin: 50px;
+	padding: 15px;
+	border: 100px;
+}
+
+.lista {
+	list-style: devanagari;
+	text-align: left;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}
+
+
+#iconos {
+	margin-top: 75px;
+}
+
+.icono {
+	width: 5%;
+}
+
+body {
+	background-color: #FFCB5C;
+}
+
+header {
+	color: #FFFFFF;
+	background-color: #21BAD6;
+	text-align: center;
+	padding: 35px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 25px;
+}
+
+nav ul li {
+	display: inline;
+}
+
+.barra {
+	list-style: none;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+table {
+	background-color: #FFFFFF;
+	text-align: center;
+	margin: 5%;
+}
+
+table, th, td {
+	border: 3px solid green;
+	border-collapse: collapse;
+	font-family: 'Poppins', sans-serif;
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #1F4982;
+	width: 175px;
+	height: 35px;
+	text-align: center;
+	line-height: 38px;
+}
+
+footer {
+	font-family: 'Cabin', sans-serif;
+	font-weight: bold;
+	padding-top: 75px;
+}
