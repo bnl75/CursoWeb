@@ -1,0 +1,84 @@
+/*
+
+*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	background-color: #f1f1f1;
+}
+
+h1 {
+	font-family: 'Black Han Sans', sans-serif;
+	color: #fff;
+}
+
+header {
+	background-color: rgb(28,58,64);
+	/*Existe rgba() donde "a" es la opacidad que se le va a dar... La transparencia*/
+	margin: 0px;
+	padding: 0px;
+}
+
+h1, h2 {
+	text-align: center;
+	padding-top: 20px;
+}
+
+nav ul li, footer ul li {
+	display: inline;
+}
+
+ul {
+	list-style: none;
+}
+
+nav a, footer a {
+	display: inline-block;
+	
+	/*px, %... se puede usar por pixel o por porcentaje de la pantalla en que se está viendo*/
+	width: 130px;
+	height: 20px;
+	text-decoration: none;
+	background-color: #0A0A2A;
+	color: #fff;	
+}
+
+img {
+	width: 45%;
+}
+
+.informacion-personal {
+	text-align: center;
+	width: 45%;
+}
+
+li:hover a {
+	background-color: #ccc;
+}
+
+.active {
+	background-color: #ccc;
+}
+
+footer {
+	font-family: 'Montserrat', cursive;
+	height: 120px;
+	background: grey;
+}
+
+section.premios {
+	width: 60%;
+}
+
+table, th, td {
+	border: 2px solid rgb(28,58,64);
+	border-collapse: collapse;
+}
+
+section.informacion-justificada {
+	text-align: center;
+	width: 45%;
+	text-align: justify;
+}
