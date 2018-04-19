@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Modelo de cajas</title>
+	<link rel="stylesheet" type="text/css" href="css/forms.css">
+</head>
+<body>
+	<form action="/my-handling-form-page" method="post">
+		<div>
+			<label for="name">Nombre</label>
+			<input type="text" id="name" name="user_name">  <!--Es una caja de texto-->
+		</div>
+		<div>
+			<label for="mail">E-Mail</label>
+			<input type="email" id="mail" name="user_mail">
+		</div>
+		<div>
+			<label for="contra">Contraseña</label>
+			<input type="password" id="contra" name="psw">
+		</div>
+		<div>
+			<label for="msg">Mensaje</label>
+			<textarea name="user_name" id="msg"></textarea>
+		</div>
+		<div class="button">
+			<button type="submit">Enviar mensaje</button>
+		</div>
+	</form>
+	
+</body>
+</html>

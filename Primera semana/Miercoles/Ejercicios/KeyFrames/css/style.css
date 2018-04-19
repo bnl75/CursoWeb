@@ -1,0 +1,164 @@
+/*Selectores de etiqueta*/
+body {
+	background-color: #043754;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+}
+
+div {
+	margin: auto;
+}
+/*------------------------------------------------*/
+/*Selectores de clase*/
+.cuadrado {
+	width: 75px;
+	height: 75px;
+	background-color: red;
+	animation-name: cuadrado; /*Es el nombre de la animación que le puse*/
+	animation-duration: 10s;	/*Es para la duración de los cambios*/
+}
+
+.rectangulo {
+	width: 100px;
+	height: 50px;
+	background-color: green;
+	position: relative;
+}
+
+.triangulo {
+	height: 0;
+	width: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 50px solid red;
+	position: relative;
+	animation-name: triangulo;
+	animation-duration: 3s;
+}
+
+.circulo {
+	/*Para hacer un circulo se hace un cuadrado y se le ponen las empty-cells: show;uinas redondas*/
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	animation: circulo 1s linear 0s infinite;
+}
+
+.circuloPac {
+	/*Para hacer un circulo se hace un cuadrado y se le ponen las empty-cells: show;uinas redondas*/
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	animation: circulo 1s linear 0s infinite;
+	position: fixed;
+	left: 47%;
+	bottom: 17%;
+}
+
+.ojo {
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	border: 7px solid white;
+	margin-right: 50px;
+	background-color: #000000;
+
+}
+
+.pacman {
+	margin: 50px 10px;
+}
+
+.pacman2 {
+	background-color: yellow;
+	height: 100px;
+	width: 200px;
+	border-radius: 0 0 100px 100px;
+	animation: pacmanInf 1s linear 0s infinite;
+}
+
+.pacman1 {
+	background-color: yellow;
+	height: 100px;
+	width: 200px;
+	border-radius: 100px  100px 0 0;
+	animation: pacmanSup 1s linear 0s infinite;
+}
+
+/*ELEMENTO PARA ANIMAR UN SELECTOR. 	Aquí usamos fotogramas para la animación*/
+@keyframes cuadrado {
+	0%{background-color: red;} /*Es 0 porque ahí va a empezar el movimiento (con rojo)*/
+	25%{background-color: yellow;}
+	50%{background-color: blue;}
+	100%{background-color: green;}
+}
+
+@keyframes triangulo {
+	0%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid red; left: 0px; top: 0px;}
+	25%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid red; left: 200px; top: 0px;}
+	50%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid red; left: 200px; top: 200px;}
+	75%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid red; left: -200px; top: 200px;}
+	100%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid red; left: -200px; top: 0px;}
+}
+
+@keyframes circulo {
+	from{box-shadow:  /*Son sombras para cada lado de la caja*/
+		100px 0 0 0 white,
+		300px 0 0 0 white,
+		500px 0 0 0 white,
+		700px 0 0 0 white,
+		900px 0 0 0 white,
+		1100px 0 0 0 white,
+		1300px 0 0 0 white;
+	}
+	to{box-shadow:  /*Son sombras para cada lado de la caja*/
+		0px 0 0 0 white,
+		100px 0 0 0 white,
+		300px 0 0 0 white,
+		500px 0 0 0 white,
+		700px 0 0 0 white,
+		900px 0 0 0 white,
+		1100px 0 0 0 white;	
+	}
+}
+
+@keyframes circuloPac {
+	from{box-shadow:  /*Son sombras para cada lado de la caja*/
+		100px 0 0 0 white,
+		300px 0 0 0 white,
+		500px 0 0 0 white,
+		700px 0 0 0 white,
+		900px 0 0 0 white,
+		1100px 0 0 0 white,
+		1300px 0 0 0 white;
+	}
+	to{box-shadow:  /*Son sombras para cada lado de la caja*/
+		0px 0 0 0 white,
+		100px 0 0 0 white,
+		300px 0 0 0 white,
+		500px 0 0 0 white,
+		700px 0 0 0 white,
+		900px 0 0 0 white,
+		1100px 0 0 0 white;	
+	}
+}
+
+@keyframes pacmanSup {
+	0%{transform: rotate(0deg); left: 0px}
+	100%{transform: rotate(-30deg); left: 0px}
+}
+
+@keyframes pacmanInf {
+	0%{transform: rotate(0deg); left: 0px}
+	100%{transform: rotate(30deg); left: 0px}
+}
