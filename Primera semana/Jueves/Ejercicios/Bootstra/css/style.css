@@ -1,0 +1,7 @@
+.col-md-1, .col-md-4, .col-md-8, .col-md-12, .offset-md-4, .offset-md-3, .offset-md-6, .col-md-9, .col-md-push-3, .col-md-pull-9 {
+	padding-top: 10px;
+	padding-bottom: 10x;
+	background-color: #1C06F2;
+	color: #FFF;
+	border: 2px solid #F90404;
+}
