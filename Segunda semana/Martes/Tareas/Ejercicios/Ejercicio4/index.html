@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	
+	<meta charset="UTF-8">
+	<title>CUD</title>
+</head>
+<body>
+	<center><h2>CUD (CREATE, UPDATE, DELETE) en una lista en HTML</h2></center>
+	
+	<h4>Agregar elemento</h4>
+	Elemento:
+	<input type="text" id="agregar">
+	<button onclick="agregarElemento()">Agregar</button>
+
+	<h4>Actualizar elemento</h4>
+	Elemento a modificar (índice):
+	<input type="text" id="actualizar">
+	<br>Nuevo elemento:
+	<input type="text" id="actualizado">
+	<button onclick="actualizarElemento()">Actualizar</button>
+
+	<h4>Eliminar elemento</h4>
+	Elemento a eliminar (índice):
+	<input type="text" id="eliminar">
+	<button onclick="eliminarElemento()">Eliminar</button>
+
+	<ul id="listaDesordenada"></ul>
+
+</body>
+<script type="text/javascript" src="js/app.js"></script>
+</html>
